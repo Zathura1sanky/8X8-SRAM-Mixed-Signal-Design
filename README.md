@@ -47,7 +47,7 @@ Decoder in digital electronics does the job of decoding based on the input data.
 </p>
 The eSIM simulator's MakerChip capability has been used in this design to create the aforementioned decoder. Open the MakerChip tab on the left after launching eSIM , then load the Verilog code file. Using the MakerChip EDA tool coupled with the eSIM tool, we can test the operation of the loaded verilog code. The verilog code may then be translated into a NgSpice netlist by switching to the NgVeri tab. The aforementioned decoder's verilog code is as follows:
 
-'''
+```
   module SANKET_decoder_3x8(y,a,en);
   input [2:0]a;
   input en;
@@ -68,4 +68,4 @@ The eSIM simulator's MakerChip capability has been used in this design to create
       else y = 8'b00000000;
     end
   endmodule
-'''
+```
