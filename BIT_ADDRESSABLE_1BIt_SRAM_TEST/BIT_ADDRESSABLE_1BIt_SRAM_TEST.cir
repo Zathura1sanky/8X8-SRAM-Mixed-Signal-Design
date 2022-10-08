@@ -1,0 +1,17 @@
+* E:\FOSSEE\ws\BIT_ADDRESSABLE_1BIt_SRAM_TEST\BIT_ADDRESSABLE_1BIt_SRAM_TEST.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/07/22 17:56:52
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v1  En GND pulse		
+v2  Data GND pulse		
+U1  En plot_v1		
+U2  Data plot_v1		
+U3  Q plot_v1		
+scmode1  SKY130mode		
+X1  En En Data En Q SANKET_SRAM_BIT_ADDRESSABLE		
+
+.end

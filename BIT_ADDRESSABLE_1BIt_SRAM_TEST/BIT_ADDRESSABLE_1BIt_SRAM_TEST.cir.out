@@ -1,0 +1,27 @@
+* e:\fossee\ws\bit_addressable_1bit_sram_test\bit_addressable_1bit_sram_test.cir
+
+.include BIT_ADDRESSABLE_SRAM_1BIT.sub
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+.lib "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+v1  en gnd pulse(0 1.8 0.0 0.1 0.1 5 10)
+v2  data gnd pulse(0 1.8 0.0 0.1 0.1 1 2)
+* u1  en plot_v1
+* u2  data plot_v1
+* u3  q plot_v1
+* s c m o d e
+x1 en en data en q BIT_ADDRESSABLE_SRAM_1BIT
+.tran 0.1e-00 20e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(en)+8 v(data)+4 v(q)
+.endc
+.end
