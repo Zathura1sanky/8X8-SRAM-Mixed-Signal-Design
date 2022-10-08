@@ -10,7 +10,7 @@ A mixed-signal design for an 8X8 SRAM, as well as additional bit addressable RAM
  * [Writer Circuit](#Writer-Circuit)
  * [Sensor Circuit](#Sensor-Circuit)
  * [Simulation Tools Used](#Simulation-Tools-Used)
- * [Pre-Layout Schematics and Simulations](#Pre-Layout-Schematics-and-Simulations)
+ * [Schematics and Simulations](#-Schematics-and-Simulations)
    * [Schematics](#Schematics)
    * [Simulations](#Simulations)
  * [Netlist of the Circuits](#Netlist-of-the-Circuits)
@@ -94,3 +94,14 @@ The SRAM cell's data may be read using this circuit. A Read Enable(r en) pin on 
 • Makerchip: It is an Online Web Browser IDE for Verilog/System-verilog/TL-Verilog Simulation. <a href='https://www.makerchip.com/'>Refer here</a></br>
 
 • Verilator: It is a tool which converts Verilog code to C++ objects. <a href='https://www.veripool.org/verilator/'>Refer here</a></br>
+
+# Schematics and Simulations:
+
+## Schematics:
+
+## 3:8 Decoder:
+The component will be listed under "eSim Ngveri" as the module name we specified after the NgSpice netlist has been built as previously said. The ADC and DAC bridges, which are offered by eSim under the "eSim Hybrid" and may be chosen based on the number of inputs and outputs needed, are what are needed to replicate this digital block in the analogue environment. The schematic displayed below will be created if the aforementioned procedures are followed:
+<p align="center">
+  <img src="IMAGES/decoder_TEST_SCHEMATIC.png"></br>
+  Fig: 3:8 Decoder Schematic:
+</p>
