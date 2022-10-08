@@ -168,3 +168,30 @@ Return to eSim after creating the design and producing the netlist, choose the 
   <img src="IMAGES/SRAM_CELL_TEST_GRAPH.png"></br>
   Fig: Transient Analysis of 6T SRAM Cell:
 </p>
+
+### 1-Bit SRAM Cell:
+Return to eSim after creating the design and producing the netlist, choose the KiCAD to NgSpice converter and provide the necessary parameters to convert the current circuit to NgSpice. After completing the above procedures, run the simulation to obtain the following results:
+<p align="center">
+  <img src="Images/1BITRAM_TEST.png"></br>
+  Fig: Test Schematic of 1-Bit SRAM Cell:
+</p>
+<p align="center">
+  <img src="Images/SRAM_1BIT_TEST_GRAPH.png"></br>
+  Fig: Transient Analysis of 1-Bit SRAM Cell:
+</p>
+
+### SRAM Row:
+<p align="center">
+  <img src="Images/8_BIT_SRAM_TEST.png"></br>
+  Fig. 13: Test Schematic SRAM Row:
+</p>
+<p align="center">
+  <img src="Images/8_BIT_SRAM_GRAPH.png"></br>
+  Fig. 13: Transient Analysis of SRAM ROW:
+</p>
+
+### 8x8 SRAM:
+<p align="center">
+  <img src="Images/final_graph_.png"></br>
+  Fig. 13: Transient Analysis of 8x8 SRAM:
+</p>
