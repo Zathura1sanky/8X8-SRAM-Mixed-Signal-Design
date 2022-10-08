@@ -8,7 +8,7 @@ A mixed-signal design for an 8X8 SRAM, as well as additional bit addressable RAM
  * [6T SRAM Cell](#6T-SRAM-Cell)
  * [3X8 Decoder](#3X8-Decoder)
  * [Writer Circuit](#Writer-Circuit)
- * [Sensory Circuit](#Sensory-Circuit)
+ * [Sensor Circuit](#Sensor-Circuit)
  * [Open Source Tools Used](#Open-Source-Tools-Used)
  * [Pre-Layout Schematics and Simulations](#Pre-Layout-Schematics-and-Simulations)
    * [Schematics](#Schematics)
@@ -83,3 +83,5 @@ The input for the 6T SRAM cell is provided by this circuit. This block's functio
     end
   endmodule
 ```
+# Sensor Circuit
+The SRAM cell's data may be read using this circuit. A Read Enable(r en) pin on the device outputs the value stored in the SRAM cell when it is high.
