@@ -99,9 +99,21 @@ The SRAM cell's data may be read using this circuit. A Read Enable(r en) pin on 
 
 ## Schematics:
 
-## 3:8 Decoder:
+### 3:8 Decoder:
 The component will be listed under "eSim Ngveri" as the module name we specified after the NgSpice netlist has been built as previously said. The ADC and DAC bridges, which are offered by eSim under the "eSim Hybrid" and may be chosen based on the number of inputs and outputs needed, are what are needed to replicate this digital block in the analogue environment. The schematic displayed below will be created if the aforementioned procedures are followed:
 <p align="center">
   <img src="IMAGES/decoder_TEST_SCHEMATIC.png"></br>
   Fig: 3:8 Decoder Schematic:
 </p>
+
+### 6T SRAM cell:
+We may choose the MOSFETS for this circuit from the list of "eSim Devices" in the schematic, connect the circuit as indicated, annotate the components, run an electrical rules check, and produce a netlist to finish the schematic. The schematic should then be created using the eSIM's Sub-circuit tool without sources and with the pins replaced with ports. After generating the netlist, build the symbol.
+<p align="center">
+  <img src="IMAGES/SRAM_symbol.png"></br>
+  Fig: SRAM Symbol:
+</p>
+<p align="center">
+  <img src="IMAGES/SRAM_CELL_schematic.png"></br>
+  Fig7: 6T SRAM Schematic:
+</p>
+
