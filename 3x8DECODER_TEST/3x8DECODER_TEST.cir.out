@@ -1,0 +1,47 @@
+* e:\fossee\ws\3x8decoder_test\3x8decoder_test.cir
+
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+.lib "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+* u5  a2 a1 a0 net-_u5-pad4_ net-_u3-pad1_ net-_u3-pad2_ net-_u3-pad3_ net-_u3-pad4_ adc_bridge_4
+* u6  net-_u3-pad5_ net-_u3-pad6_ net-_u3-pad7_ net-_u3-pad8_ net-_u3-pad9_ net-_u3-pad10_ net-_u3-pad11_ net-_u3-pad12_ y7 y6 y5 y4 y3 y2 y1 y0 dac_bridge_8
+v4 net-_u5-pad4_ gnd  dc 1.8
+v3  a0 gnd pulse(0 1.8 0.0 0.1 0.1 1 2)
+v2  a1 gnd pulse(0  1.8 0.0 0.1 0.1 2 4)
+v1  a2 gnd pulse(0 1.8 0.0 0.1 0.1 4 8)
+* u9  y5 plot_v1
+* u10  y4 plot_v1
+* u7  y7 plot_v1
+* u8  y6 plot_v1
+* u11  y3 plot_v1
+* u12  y2 plot_v1
+* u13  y1 plot_v1
+* u14  y0 plot_v1
+* u1  a2 plot_v1
+* u2  a1 plot_v1
+* u4  a0 plot_v1
+* s c m o d e
+* u3  net-_u3-pad1_ net-_u3-pad2_ net-_u3-pad3_ net-_u3-pad4_ net-_u3-pad5_ net-_u3-pad6_ net-_u3-pad7_ net-_u3-pad8_ net-_u3-pad9_ net-_u3-pad10_ net-_u3-pad11_ net-_u3-pad12_ sanket_decoder_3x8
+a1 [a2 a1 a0 net-_u5-pad4_ ] [net-_u3-pad1_ net-_u3-pad2_ net-_u3-pad3_ net-_u3-pad4_ ] u5
+a2 [net-_u3-pad5_ net-_u3-pad6_ net-_u3-pad7_ net-_u3-pad8_ net-_u3-pad9_ net-_u3-pad10_ net-_u3-pad11_ net-_u3-pad12_ ] [y7 y6 y5 y4 y3 y2 y1 y0 ] u6
+a3 [net-_u3-pad1_ net-_u3-pad2_ net-_u3-pad3_ ] [net-_u3-pad4_ ] [net-_u3-pad5_ net-_u3-pad6_ net-_u3-pad7_ net-_u3-pad8_ net-_u3-pad9_ net-_u3-pad10_ net-_u3-pad11_ net-_u3-pad12_ ] u3
+* Schematic Name:                             adc_bridge_4, NgSpice Name: adc_bridge
+.model u5 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_8, NgSpice Name: dac_bridge
+.model u6 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             sanket_decoder_3x8, NgSpice Name: sanket_decoder_3x8
+.model u3 sanket_decoder_3x8(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+.tran 0.1e-00 20e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(y5)+100 v(y4)+90 v(y7)+80 v(y6)+70 v(y3)+60 v(y2)+50 v(y1)+40 v(y0)+30 v(a2)+20 v(a1)+10 v(a0)
+.endc
+.end
