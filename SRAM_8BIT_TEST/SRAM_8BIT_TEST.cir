@@ -1,0 +1,26 @@
+* E:\FOSSEE\ws\SRAM_8BIT_TEST\SRAM_8BIT_TEST.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/05/22 20:58:09
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v1  WL GND pulse		
+v2  r_en GND pulse		
+v3  D_IN GND pulse		
+U4  q0 plot_v1		
+U5  q1 plot_v1		
+U6  q2 plot_v1		
+U8  q3 plot_v1		
+U7  q4 plot_v1		
+U9  q5 plot_v1		
+U10  q6 plot_v1		
+U11  q7 plot_v1		
+U1  WL plot_v1		
+U2  r_en plot_v1		
+U3  D_IN plot_v1		
+scmode1  SKY130mode		
+X1  WL r_en q7 q6 D_IN q5 D_IN q4 D_IN q3 D_IN q2 q1 D_IN D_IN q0 D_IN D_IN SANKET_8BIT_SRAM		
+
+.end

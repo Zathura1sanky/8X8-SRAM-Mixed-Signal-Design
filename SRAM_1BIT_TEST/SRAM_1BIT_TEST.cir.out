@@ -1,0 +1,29 @@
+* e:\fossee\ws\sram_1bit_test\sram_1bit_test.cir
+
+.include SANKET_1BIT_SRAM.sub
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+.lib "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+x1 wl din r_en d_out SANKET_1BIT_SRAM
+v1  wl gnd pulse(0 1.8 0 0.2 0.2 5 10)
+v2  din gnd pulse(0 1.8 0 0.1 0.1 1 2)
+v3  r_en gnd pulse(1.8 0 0 0.1 0.1 4 8)
+* u1  wl plot_v1
+* u2  din plot_v1
+* u3  r_en plot_v1
+* u4  d_out plot_v1
+* s c m o d e
+.tran 0.1e-00 20e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(d_out)+9 v(r_en)+6 v(wl)+3 v(din)
+.endc
+.end

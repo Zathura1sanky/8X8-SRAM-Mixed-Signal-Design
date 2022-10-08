@@ -1,0 +1,19 @@
+* E:\FOSSEE\eSim\library\SubcircuitLibrary\8BIT_SRAM\8BIT_SRAM.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/05/22 20:16:08
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  Net-_U1-Pad1_ Net-_U1-Pad5_ Net-_U1-Pad2_ Net-_U1-Pad3_ SANKET_1BIT_SRAM		
+X3  Net-_U1-Pad1_ Net-_U1-Pad7_ Net-_U1-Pad2_ Net-_U1-Pad4_ SANKET_1BIT_SRAM		
+X5  Net-_U1-Pad1_ Net-_U1-Pad9_ Net-_U1-Pad2_ Net-_U1-Pad6_ SANKET_1BIT_SRAM		
+X7  Net-_U1-Pad1_ Net-_U1-Pad11_ Net-_U1-Pad2_ Net-_U1-Pad8_ SANKET_1BIT_SRAM		
+X2  Net-_U1-Pad1_ Net-_U1-Pad14_ Net-_U1-Pad2_ Net-_U1-Pad10_ SANKET_1BIT_SRAM		
+X4  Net-_U1-Pad1_ Net-_U1-Pad15_ Net-_U1-Pad2_ Net-_U1-Pad12_ SANKET_1BIT_SRAM		
+X6  Net-_U1-Pad1_ Net-_U1-Pad17_ Net-_U1-Pad2_ Net-_U1-Pad13_ SANKET_1BIT_SRAM		
+X8  Net-_U1-Pad1_ Net-_U1-Pad18_ Net-_U1-Pad2_ Net-_U1-Pad16_ SANKET_1BIT_SRAM		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ Net-_U1-Pad17_ Net-_U1-Pad18_ PORT		
+
+.end
