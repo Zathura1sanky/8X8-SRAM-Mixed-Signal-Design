@@ -161,6 +161,10 @@ Return to eSim after creating the design and producing the netlist, choose the 
 
 ### 6T SRAM Cell:
 <p align="center">
+  <img src="IMAGES/SRAM_CELL_schematic_testing.png"></br>
+  Fig: Test Schematic of 6T SRAM Cell:
+</p>
+<p align="center">
   <img src="IMAGES/SRAM_CELL_TEST_GRAPH.png"></br>
-  Fig. 12: Transient Analysis of 6T SRAM Cell:
+  Fig: Transient Analysis of 6T SRAM Cell:
 </p>
