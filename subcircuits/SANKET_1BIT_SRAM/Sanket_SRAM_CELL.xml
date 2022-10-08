@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>E:/FOSSEE/eSim/library/SubcircuitLibrary/Sanket_SRAM_CELL/Sanket_SRAM_CELL.sch</source>
+    <date>10/03/22 01:15:09</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Sanket_SRAM_CELL.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="SC3">
+      <value>sky130_fd_pr__nfet_01v8_lvt</value>
+      <libsource lib="eSim_SKY130" part="sky130_fd_pr__nfet_01v8_lvt"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6339E3EC</tstamp>
+    </comp>
+    <comp ref="SC5">
+      <value>sky130_fd_pr__nfet_01v8_lvt</value>
+      <libsource lib="eSim_SKY130" part="sky130_fd_pr__nfet_01v8_lvt"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6339E4BB</tstamp>
+    </comp>
+    <comp ref="SC1">
+      <value>sky130_fd_pr__nfet_01v8_lvt</value>
+      <libsource lib="eSim_SKY130" part="sky130_fd_pr__nfet_01v8_lvt"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6339E526</tstamp>
+    </comp>
+    <comp ref="SC6">
+      <value>sky130_fd_pr__nfet_01v8_lvt</value>
+      <libsource lib="eSim_SKY130" part="sky130_fd_pr__nfet_01v8_lvt"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6339E57D</tstamp>
+    </comp>
+    <comp ref="SC2">
+      <value>sky130_fd_pr__pfet_01v8_lvt</value>
+      <libsource lib="eSim_SKY130" part="sky130_fd_pr__pfet_01v8_lvt"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6339E589</tstamp>
+    </comp>
+    <comp ref="SC4">
+      <value>sky130_fd_pr__pfet_01v8_lvt</value>
+      <libsource lib="eSim_SKY130" part="sky130_fd_pr__pfet_01v8_lvt"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6339E5D4</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>PORT</value>
+      <libsource lib="eSim_Miscellaneous" part="PORT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6339F74C</tstamp>
+    </comp>
+    <comp ref="scmode1">
+      <value>SKY130mode</value>
+      <libsource lib="eSim_SKY130" part="SKY130mode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>633A3B1A</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="eSim_Miscellaneous" part="PORT">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PORT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+        <pin num="3" name="~" type="BiDi"/>
+        <pin num="4" name="~" type="BiDi"/>
+        <pin num="5" name="~" type="BiDi"/>
+        <pin num="6" name="~" type="BiDi"/>
+        <pin num="7" name="~" type="BiDi"/>
+        <pin num="8" name="~" type="BiDi"/>
+        <pin num="9" name="~" type="BiDi"/>
+        <pin num="10" name="~" type="BiDi"/>
+        <pin num="11" name="~" type="BiDi"/>
+        <pin num="12" name="~" type="BiDi"/>
+        <pin num="13" name="~" type="BiDi"/>
+        <pin num="14" name="~" type="BiDi"/>
+        <pin num="15" name="~" type="BiDi"/>
+        <pin num="16" name="~" type="BiDi"/>
+        <pin num="17" name="~" type="BiDi"/>
+        <pin num="18" name="~" type="BiDi"/>
+        <pin num="19" name="~" type="BiDi"/>
+        <pin num="20" name="~" type="BiDi"/>
+        <pin num="21" name="~" type="BiDi"/>
+        <pin num="22" name="~" type="BiDi"/>
+        <pin num="23" name="~" type="BiDi"/>
+        <pin num="24" name="~" type="BiDi"/>
+        <pin num="25" name="~" type="BiDi"/>
+        <pin num="26" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="eSim_SKY130" part="SKY130mode">
+      <fields>
+        <field name="Reference">scmode</field>
+        <field name="Value">SKY130mode</field>
+      </fields>
+    </libpart>
+    <libpart lib="eSim_SKY130" part="sky130_fd_pr__nfet_01v8_lvt">
+      <fields>
+        <field name="Reference">SC</field>
+        <field name="Value">sky130_fd_pr__nfet_01v8_lvt</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="BiDi"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="S" type="BiDi"/>
+        <pin num="4" name="B" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="eSim_SKY130" part="sky130_fd_pr__pfet_01v8_lvt">
+      <fields>
+        <field name="Reference">SC</field>
+        <field name="Value">sky130_fd_pr__pfet_01v8_lvt</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="BiDi"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="S" type="BiDi"/>
+        <pin num="4" name="B" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="eSim_SKY130">
+      <uri>E:\FOSSEE\KiCad\share\kicad\library\eSim_SKY130.lib</uri>
+    </library>
+    <library logical="eSim_Miscellaneous">
+      <uri>E:\FOSSEE\KiCad\share\kicad\library\eSim_Miscellaneous.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(SC1-Pad1)">
+      <node ref="U1" pin="1"/>
+      <node ref="SC1" pin="1"/>
+    </net>
+    <net code="2" name="Net-(SC6-Pad1)">
+      <node ref="SC6" pin="1"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="3" name="Net-(SC1-Pad2)">
+      <node ref="SC1" pin="2"/>
+      <node ref="SC6" pin="2"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="4" name="Net-(SC2-Pad3)">
+      <node ref="SC2" pin="4"/>
+      <node ref="SC4" pin="4"/>
+      <node ref="SC2" pin="3"/>
+      <node ref="U1" pin="3"/>
+      <node ref="SC4" pin="3"/>
+    </net>
+    <net code="5" name="Net-(SC1-Pad4)">
+      <node ref="SC3" pin="3"/>
+      <node ref="SC3" pin="4"/>
+      <node ref="SC5" pin="3"/>
+      <node ref="SC6" pin="4"/>
+      <node ref="SC5" pin="4"/>
+      <node ref="SC1" pin="4"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="6" name="Net-(SC2-Pad2)">
+      <node ref="SC3" pin="2"/>
+      <node ref="SC5" pin="1"/>
+      <node ref="SC4" pin="1"/>
+      <node ref="SC6" pin="3"/>
+      <node ref="SC2" pin="2"/>
+    </net>
+    <net code="7" name="Net-(SC1-Pad3)">
+      <node ref="SC4" pin="2"/>
+      <node ref="SC3" pin="1"/>
+      <node ref="SC5" pin="2"/>
+      <node ref="SC2" pin="1"/>
+      <node ref="SC1" pin="3"/>
+      <node ref="U1" pin="2"/>
+    </net>
+  </nets>
+</export>
