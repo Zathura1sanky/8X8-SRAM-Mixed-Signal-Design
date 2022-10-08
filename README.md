@@ -159,3 +159,8 @@ Return to eSim after creating the design and producing the netlist, choose the 
   Fig: MakerChip Analysis of 3X8 Decoder:
 </p>
 
+### 6T SRAM Cell:
+<p align="center">
+  <img src="Images/sram_cell_final_REFER_THIS!!!!!!.png"></br>
+  Fig. 12: Transient Analysis of 6T SRAM Cell:
+</p>
