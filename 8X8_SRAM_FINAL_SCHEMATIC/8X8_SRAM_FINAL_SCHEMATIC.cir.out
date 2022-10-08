@@ -1,0 +1,60 @@
+* e:\fossee\ws\8x8_sram_final_schematic\8x8_sram_final_schematic.cir
+
+.include 8BIT_SRAM.sub
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+.lib "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+* u5  a2 a1 a0 net-_u5-pad4_ net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ adc_bridge_4
+* u1  net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ sanket_decoder_3x8
+* u6  net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u6-pad9_ net-_u6-pad10_ net-_u6-pad11_ net-_u6-pad12_ net-_u6-pad13_ net-_u6-pad14_ net-_u6-pad15_ net-_u6-pad16_ dac_bridge_8
+v6  din gnd pulse(0 1.8 0.0 0.1 0.1 1 2)
+v5  r_en gnd pulse(0 1.8 0.0 0.1 0.1 8 16)
+* u9  d7 plot_v1
+* u11  d6 plot_v1
+* u12  d4 plot_v1
+* u10  d5 plot_v1
+* u15  d3 plot_v1
+* u14  d1 plot_v1
+* u13  d2 plot_v1
+* u16  d0 plot_v1
+* u7  r_en plot_v1
+* u8  din plot_v1
+v4 net-_u5-pad4_ gnd  dc 1.8
+v3  a0 gnd pulse(0 1.8 0.0 0.1 0.1 1 2)
+v2  a1 gnd pulse(0  1.8 0.0 0.1 0.1 2 4)
+v1  a2 gnd pulse(0 1.8 0.0 0.1 0.1 4 8)
+* u2  a2 plot_v1
+* u3  a1 plot_v1
+* u4  a0 plot_v1
+x1 net-_u6-pad9_ r_en d7 d7 din d7 din d7 din d7 din d7 d7 din din d7 din din 8BIT_SRAM
+x2 net-_u6-pad10_ r_en d6 d6 din d6 din d6 din d6 din d6 d6 din din d6 din din 8BIT_SRAM
+x3 net-_u6-pad11_ r_en d4 d4 din d4 din d4 din d4 din d4 d4 din din d4 din din 8BIT_SRAM
+x4 net-_u6-pad12_ r_en d5 d5 din d5 din d5 din d5 din d5 d5 din din d5 din din 8BIT_SRAM
+x5 net-_u6-pad13_ r_en d3 d3 din d3 din d3 din d3 din d3 d3 din din d3 din din 8BIT_SRAM
+x6 net-_u6-pad14_ r_en d2 d2 din d2 din d2 din d2 din d2 d2 din din d2 din din 8BIT_SRAM
+x7 net-_u6-pad15_ r_en d1 d1 din d1 din d1 din d1 din d1 d1 din din d1 din din 8BIT_SRAM
+x8 net-_u6-pad16_ r_en d0 d0 din d0 din d0 din d0 din d0 d0 din din d0 din din 8BIT_SRAM
+* s c m o d e
+a1 [a2 a1 a0 net-_u5-pad4_ ] [net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ ] u5
+a2 [net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ ] [net-_u1-pad4_ ] [net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ ] u1
+a3 [net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ ] [net-_u6-pad9_ net-_u6-pad10_ net-_u6-pad11_ net-_u6-pad12_ net-_u6-pad13_ net-_u6-pad14_ net-_u6-pad15_ net-_u6-pad16_ ] u6
+* Schematic Name:                             adc_bridge_4, NgSpice Name: adc_bridge
+.model u5 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             sanket_decoder_3x8, NgSpice Name: sanket_decoder_3x8
+.model u1 sanket_decoder_3x8(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             dac_bridge_8, NgSpice Name: dac_bridge
+.model u6 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+.tran 0.1e-00 40e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(d7)+48 v(d6)+44 v(d4)+40 v(d5)+36 v(d3)+32 v(d1)+28 v(d2)+24 v(d0)+20 v(a2)+16 v(a1)+12 v(a0)+8 v(r_en)+4 v(din)
+.endc
+.end

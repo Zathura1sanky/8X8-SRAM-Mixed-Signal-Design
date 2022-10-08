@@ -1,0 +1,41 @@
+* E:\FOSSEE\ws\8X8_SRAM_FINAL_SCHEMATIC\8X8_SRAM_FINAL_SCHEMATIC.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/07/22 13:05:45
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U5  a2 a1 a0 Net-_U5-Pad4_ Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ adc_bridge_4		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ sanket_decoder_3x8		
+U6  Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U6-Pad9_ Net-_U6-Pad10_ Net-_U6-Pad11_ Net-_U6-Pad12_ Net-_U6-Pad13_ Net-_U6-Pad14_ Net-_U6-Pad15_ Net-_U6-Pad16_ dac_bridge_8		
+v6  din GND pulse		
+v5  r_en GND pulse		
+U9  D7 plot_v1		
+U11  D6 plot_v1		
+U12  D4 plot_v1		
+U10  D5 plot_v1		
+U15  D3 plot_v1		
+U14  D1 plot_v1		
+U13  D2 plot_v1		
+U16  D0 plot_v1		
+U7  r_en plot_v1		
+U8  din plot_v1		
+v4  Net-_U5-Pad4_ GND DC		
+v3  a0 GND pulse		
+v2  a1 GND pulse		
+v1  a2 GND pulse		
+U2  a2 plot_v1		
+U3  a1 plot_v1		
+U4  a0 plot_v1		
+X1  Net-_U6-Pad9_ r_en D7 D7 din D7 din D7 din D7 din D7 D7 din din D7 din din SANKET_8BIT_SRAM		
+X2  Net-_U6-Pad10_ r_en D6 D6 din D6 din D6 din D6 din D6 D6 din din D6 din din SANKET_8BIT_SRAM		
+X3  Net-_U6-Pad11_ r_en D4 D4 din D4 din D4 din D4 din D4 D4 din din D4 din din SANKET_8BIT_SRAM		
+X4  Net-_U6-Pad12_ r_en D5 D5 din D5 din D5 din D5 din D5 D5 din din D5 din din SANKET_8BIT_SRAM		
+X5  Net-_U6-Pad13_ r_en D3 D3 din D3 din D3 din D3 din D3 D3 din din D3 din din SANKET_8BIT_SRAM		
+X6  Net-_U6-Pad14_ r_en D2 D2 din D2 din D2 din D2 din D2 D2 din din D2 din din SANKET_8BIT_SRAM		
+X7  Net-_U6-Pad15_ r_en D1 D1 din D1 din D1 din D1 din D1 D1 din din D1 din din SANKET_8BIT_SRAM		
+X8  Net-_U6-Pad16_ r_en D0 D0 din D0 din D0 din D0 din D0 D0 din din D0 din din SANKET_8BIT_SRAM		
+scmode1  SKY130mode		
+
+.end
