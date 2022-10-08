@@ -220,3 +220,9 @@ Return to eSim after creating the design and producing the netlist, choose the 
 • <a href='https://www.c2s.gov.in/'>Ministry of Electronics & Information Technology (MeitY)
 Chips to Startup (C2S)</a></br>
 
+# References:
+1.https://www.ijera.com/papers/Vol4_issue3/Version%201/CX4301574577.pdf
+2.https://ieeexplore.ieee.org/abstract/document/4140596
+3.https://ieeexplore.ieee.org/abstract/document/4798182
+4. https://www.iosrjournals.org/iosr-jvlsi/papers/vol8-issue1/Version-1/E0801014346.pdf
+
