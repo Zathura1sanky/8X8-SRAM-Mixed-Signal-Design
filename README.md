@@ -217,6 +217,6 @@ Return to eSim after creating the design and producing the netlist, choose the 
 • <a href='https://www.google.co.in/'>Google</a></br>
 • <a href='https://www.esim.fossee.in/'>Indian Institute of Technology Bombay</a></br>
 • <a href='https://spoken-tutorial.org/'>Spoken Tutorial</a></br>
-• <a href=' https://www.c2s.gov.in/'>Ministry of Electronics & Information Technology (MeitY)
+• <a href='https://www.c2s.gov.in/'>Ministry of Electronics & Information Technology (MeitY)
 Chips to Startup (C2S)</a></br>
 
