@@ -132,18 +132,30 @@ Similar to how a decoder is built, so is a writer circuit. After designing the s
 Using 1-BIT SRAM Cell previously created as sub circuit SRAM row is designed. It is cascaded form of 8 1-BIT SRAM Cells, it forms a Byte storege element. Further these rows can be used to create nx8 SRAM .
 <p align="center">
   <img src="IMAGES/8bit_sram_symbol.png"></br>
-  Fig: 8-Bit SRAM Symbol:
+  Fig: SRAM Row Symbol:
 </p>
 <p align="center">
   <img src="IMAGES/8_BIT_SRAM_SCHEMATIC.png"></br>
-  Fig: 8-Bit SRAM Schematic:
+  Fig: SRAM Row Schematic:
 </p>
 
 ### 8x8 SRAM Schematic:
 We link the Decoder and the  SRAM rows as illustrated in the schematic to produce the 8x8-Bit SRAM after creating all of the aforementioned symbols. The SRAM cell is chosen and the read/write operation is carried out based on the input provided to the decoder.
 <p align="center">
   <img src="IMAGES/8X8_SCHEMATIC_FINAL.png"></br>
-  Fig. 10: 8-Bit SRAM Schematic:
+  Fig: 8x8 SRAM Schematic:
 </p>
 
 ## Simulations:
+
+### 3X8 Decoder:
+Return to eSim after creating the design and producing the netlist, choose the KiCAD to NgSpice converter and provide the necessary parameters to convert the current circuit to NgSpice. After completing the above procedures, run the simulation to obtain the following results:
+<p align="center">
+  <img src="IMAGES/decoder_3X8_SCHEMATIC.png"></br>
+  Fig: Transient Analysis of 3X8 Decoder:
+</p>
+<p align="center">
+  <img src="IMAGES/3x8DECODER_makerchip_output.png"></br>
+  Fig: MakerChip Analysis of 3X8 Decoder:
+</p>
+
