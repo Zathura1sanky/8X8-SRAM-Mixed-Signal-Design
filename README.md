@@ -11,13 +11,13 @@ A mixed-signal design for an 8X8 SRAM, as well as additional bit addressable RAM
  * [Sensor Circuit](#Sensor-Circuit)
  * [Simulation Tools Used](#Simulation-Tools-Used)
  * [Schematics and Simulations](#Schematics-and-Simulations)
-   * [Schematics](#Schematics)
-   * [Simulations](#Simulations)
+   * [Schematics 1](#Schematics-1)
+   * [Simulations 1](#Simulations-1)
  * [Bit Addressable RAM](#Bit-Addressable-SRAM)
  * [Components of 8x8 Bit Addressable SRAM](#Components-of-8x8-Bit-Addressable-SRAM)
  * [Schematics and Simulations of Bit Addressable SRAM](#Schematics-and-Simulations-of-Bit-Addressable-SRAM)
-   * [Schematics](#Schematics)
-   * [Simulations](#Simulations)
+   * [Schematics 2](#Schematics-2)
+   * [Simulations 2](#Simulations-2)
  * [Netlist of the Circuits](#Netlist-of-the-Circuits)
  * [Author](#Author)
  * [Acknowledgements](#Acknowledgements)
@@ -102,7 +102,7 @@ The SRAM cell's data may be read using this circuit. A Read Enable(r en) pin on 
 
 # Schematics and Simulations:
 
-## Schematics:
+## Schematics 1:
 
 ### 3:8 Decoder:
 The component will be listed under "eSim Ngveri" as the module name we specified after the NgSpice netlist has been built as previously said. The ADC and DAC bridges, which are offered by eSim under the "eSim Hybrid" and may be chosen based on the number of inputs and outputs needed, are what are needed to replicate this digital block in the analogue environment. The schematic displayed below will be created if the aforementioned procedures are followed:
@@ -151,7 +151,7 @@ We link the Decoder and the  SRAM rows as illustrated in the schematic to prod
   Fig: 8x8 SRAM Schematic:
 </p>
 
-## Simulations:
+## Simulations 1:
 
 ### 3X8 Decoder:
 Return to eSim after creating the design and producing the netlist, choose the KiCAD to NgSpice converter and provide the necessary parameters to convert the current circuit to NgSpice. After completing the above procedures, run the simulation to obtain the following results:
@@ -209,7 +209,7 @@ SRAM which has address for each bit, and each bit can be addressable and data ca
 2. Bit Addressable 8 BIT ROW SRAM - Bit Addressable 1 Bit SRAM are used to design ROW SRAM. The design consist of 8 1 BIT SRAM, They can be further cascaded to obtain complex results.
 3. 8x8 Bit Addressable SRAM - It's the final design proposed.
 # Schematics and Simulations of Bit Addressable SRAM
-## Schematics
+## Schematics 2:
 
 ### Bit Addressable 1 Bit SRAM
 The design is acomplished by using the previously proposed writer circuit. as discussed above the output BL pin of writer circuit is and operation of WL pin and Din pin.Writer circuit is used to perform and operation between row pin and column pin of Bit Addressable 1 Bit SRAM.
@@ -233,7 +233,32 @@ It is made by cascading 8 1 Bit SRAM similar to design proposed for SRAM Row, bu
   Fig. 13: Symbol for Bit Addressable 8 BIT ROW SRAM:
 </p>
 
-## Simulations
+### 8x8 Bit Addressable SRAM
+It is formed by further cascading of Bit Addressable 8 BIT ROW SRAM following the final propsed Schematic of 8x8 Bit Addressable SRAM:
+<p align="center">
+  <img src="IMAGES/8X8_BIT_ADDRESSABLE_SCHEMATIC_FINAL.png"></br>
+  Fig. 13: Schematic of 8x8 Bit Addressable SRAM:
+</p>
+
+## Simulations 2:
+
+### Bit Addressable 1 Bit SRAM
+
+<p align="center">
+  <img src="IMAGES/SRAM_BIT_ADDRESSABLE_1BIT_TEST_SCHEMATIC.png"></br>
+  Fig. 13: Schematic of Bit Addressable 1 Bit SRAM:
+</p>
+Row and Column of the Bit Addressable 1 Bit SRAM are shorted for just testing purpose.
+<p align="center">
+  <img src="IMAGES/SRAM_BIT_ADDRESSABLE_1BIT_TEST_GRAPH.png"></br>
+  Fig. 13: Symbol for Bit Addressable 1 Bit SRAM:
+</p>
+
+### 8x8 Bit Addressable SRAM
+<p align="center">
+  <img src="IMAGES/8X8_BIT_ADDRESSABLE_GRAPH_FINAL.png"></br>
+  Fig. 13: Symbol for Bit Addressable 1 Bit SRAM:
+</p>
 
 
 # Netlist of the Circuits:
@@ -245,7 +270,12 @@ It is made by cascading 8 1 Bit SRAM similar to design proposed for SRAM Row, bu
 
 • Refer to the netlist of the SRAM Row here: <a href='SRAM_8BIT_TEST/SRAM_8BIT_TEST.cir.out'>Netlist</a></br>
 
-• Refer to the netlist of the 8x8 SRAM here: <a href='8X8_SRAM_FINAL_SCHEMATIC/8X8_SRAM_FINAL_SCHEMATIC.cir.outt'>Netlist</a></br>
+• Refer to the netlist of the 8x8 SRAM here: <a href='8X8_SRAM_FINAL_SCHEMATIC/8X8_SRAM_FINAL_SCHEMATIC.cir.out'>Netlist</a></br>
+
+• Refer to the netlist of the Bit Addressable 1 Bit SRAM here: <a href='BIT_ADDRESSABLE_1BIt_SRAM_TEST/BIT_ADDRESSABLE_1BIt_SRAM_TEST.cir.out'>Netlist</a></br>
+
+• Refer to the netlist of the 8x8 Bit Addressable SRAM here: <a href='8X8_SRAM_FINAL_BIT_ADDRESSABLE/8X8_SRAM_FINAL_BIT_ADDRESSABLE.cir.out'>Netlist</a></br>
+
 
 # Author:
 • Sanket M Mantrashetti, B.Tech(ECE),RV College Of Engineering, Banglore - 560059.
