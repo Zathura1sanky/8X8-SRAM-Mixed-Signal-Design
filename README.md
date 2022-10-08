@@ -27,6 +27,10 @@ A mixed-signal design for an 8X8 SRAM, as well as additional bit addressable RAM
  
  # Components for 8x8 SRAM:
  The needed components are a 3X8 Decoder built in the digital domain using NgVeri, a 1-bit RAM cell with a writer circuit, a 6T RAM cell, and a sensing circuit all implemented in the analog domain using eSIM. Cascaded 8 SRAMs are used to build an 8 bit RAM row. To choose the 8-bit RAM row that we want to execute the read/write operation to, we will utilise the 3X8 Decoder.
+ <p align="center">
+  <img src="IMAGES/1bitRAM.png"></br>
+  Fig. 1: Basic SRAM Block Diagram:
+</p>
  
  # 6T SRAM Cell
 The proposed design of SRAM is made of 6 transistors, pins associated with the design are BL,BLB,WL.WL pin is used to control Read/Write and Hold operation. BL,BLB are used to read and write bit to the ram cell.The value in the BL, BLB is sent to the opposite sides of the inverter network, overriding the already existent value, when the wl is high, turning on the N-MOSFETs on each side of the latching inverters. The value in the inverter network continues to hold after the N-MOSFETs are turned off until the inverter network receives power.
