@@ -9,7 +9,7 @@ A mixed-signal design for an 8X8 SRAM, as well as additional bit addressable RAM
  * [3X8 Decoder](#3X8-Decoder)
  * [Writer Circuit](#Writer-Circuit)
  * [Sensor Circuit](#Sensor-Circuit)
- * [Open Source Tools Used](#Open-Source-Tools-Used)
+ * [Simulation Tools Used](#Simulation-Tools-Used)
  * [Pre-Layout Schematics and Simulations](#Pre-Layout-Schematics-and-Simulations)
    * [Schematics](#Schematics)
    * [Simulations](#Simulations)
@@ -85,3 +85,12 @@ The input for the 6T SRAM cell is provided by this circuit. This block's functio
 ```
 # Sensor Circuit
 The SRAM cell's data may be read using this circuit. A Read Enable(r en) pin on the device outputs the value stored in the SRAM cell when it is high.
+
+# Simulation Tools Used:
+•  eSim: It is an Open Source EDA developed by FOSSEE, IIT Bombay. It is used for electronic circuit simulation. It is made by the combination of two software namely NgSpice and KiCAD. For more details refer:<a href='https://www.esim.fossee.in/'>Here</a></br>
+
+• NgSpice: It is an Open Source Software for Spice Simulations. For more details refer:<a href='http://ngspice.sourceforge.net/docs.html'>Here</a></br>
+
+• Makerchip: It is an Online Web Browser IDE for Verilog/System-verilog/TL-Verilog Simulation. Refer: <a href='https://www.makerchip.com/'>Here</a></br>
+
+• Verilator: It is a tool which converts Verilog code to C++ objects. Refer: <a href='https://www.veripool.org/verilator/'>Here</a></br>
