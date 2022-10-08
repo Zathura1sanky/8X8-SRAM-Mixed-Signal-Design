@@ -195,3 +195,15 @@ Return to eSim after creating the design and producing the netlist, choose the 
   <img src="IMAGES/final_graph_.png"></br>
   Fig. 13: Transient Analysis of 8x8 SRAM:
 </p>
+
+
+# Netlist of the Circuits:
+• Refer to the netlist of the 3X8 Decoder here: <a href='3x8DECODER_TEST/3x8DECODER_TEST.cir.out'>Netlist</a></br>
+
+• Refer to the netlist of the 6T SRAM Cell here: <a href='SRAM_CELL_TEST/SRAM_CELL_TEST.cir.out'>Netlist</a></br>
+
+• Refer to the netlist of the 1-Bit SRAM here: <a href='SRAM_1BIT_TEST/SRAM_1BIT_TEST.cir.out'>Netlist</a></br>
+
+• Refer to the netlist of the SRAM Row here: <a href='SRAM_8BIT_TEST/SRAM_8BIT_TEST.cir.out'>Netlist</a></br>
+
+• Refer to the netlist of the 8x8 SRAM here: <a href='8X8_SRAM_FINAL_SCHEMATIC/8X8_SRAM_FINAL_SCHEMATIC.cir.outt'>Netlist</a></br>
