@@ -207,3 +207,16 @@ Return to eSim after creating the design and producing the netlist, choose the 
 • Refer to the netlist of the SRAM Row here: <a href='SRAM_8BIT_TEST/SRAM_8BIT_TEST.cir.out'>Netlist</a></br>
 
 • Refer to the netlist of the 8x8 SRAM here: <a href='8X8_SRAM_FINAL_SCHEMATIC/8X8_SRAM_FINAL_SCHEMATIC.cir.outt'>Netlist</a></br>
+
+# Author:
+• Sanket M Mantrashetti, B.Tech(ECE),RV College Of Engineering, Banglore - 560059.
+
+# Acknowledgements:
+• <a href='https://www.vlsisystemdesign.com/'>VLSI System Design (VSD) Corp. Pvt. Ltd India</a></br>
+• <a href='https://www.esim.fossee.in/'>FOSSEE Team, IIT Bombay</a></br>
+• <a href='https://www.google.co.in/'>Google</a></br>
+• <a href='https://www.esim.fossee.in/'>Indian Institute of Technology Bombay</a></br>
+• <a href='https://spoken-tutorial.org/'>Spoken Tutorial</a></br>
+• <a href=' https://www.c2s.gov.in/'>Ministry of Electronics & Information Technology (MeitY)
+Chips to Startup (C2S)</a></br>
+
