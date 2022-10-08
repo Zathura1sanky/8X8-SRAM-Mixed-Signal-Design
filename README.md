@@ -69,3 +69,17 @@ The eSIM simulator's MakerChip capability has been used in this design to create
     end
   endmodule
 ```
+
+# Writer Circuit:
+The input for the 6T SRAM cell is provided by this circuit. This block's functionality is to provide the SRAM cell with bl and blb, if the inputs wl and din are high, bl and blb will likewise be high otherwise, both outputs will be low. The NgVeri function of the eSIM was used in this design to create the Writer Circuit. The Verilog code looks like this:
+
+```
+  module SANKET_WRITE_CKT(bl,blb,wl,din);
+    input wl,din;
+    output reg bl,blb;
+    always @(wl,din) begin
+      bl = wl & din;
+      blb = !bl;
+    end
+  endmodule
+```
