@@ -1,0 +1,15 @@
+* Subcircuit 8BIT_SRAM
+.subckt 8BIT_SRAM net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ 
+* e:\fossee\esim\library\subcircuitlibrary\8bit_sram\8bit_sram.cir
+.include SANKET_1BIT_SRAM.sub
+x1 net-_u1-pad1_ net-_u1-pad5_ net-_u1-pad2_ net-_u1-pad3_ SANKET_1BIT_SRAM
+x3 net-_u1-pad1_ net-_u1-pad7_ net-_u1-pad2_ net-_u1-pad4_ SANKET_1BIT_SRAM
+x5 net-_u1-pad1_ net-_u1-pad9_ net-_u1-pad2_ net-_u1-pad6_ SANKET_1BIT_SRAM
+x7 net-_u1-pad1_ net-_u1-pad11_ net-_u1-pad2_ net-_u1-pad8_ SANKET_1BIT_SRAM
+x2 net-_u1-pad1_ net-_u1-pad14_ net-_u1-pad2_ net-_u1-pad10_ SANKET_1BIT_SRAM
+x4 net-_u1-pad1_ net-_u1-pad15_ net-_u1-pad2_ net-_u1-pad12_ SANKET_1BIT_SRAM
+x6 net-_u1-pad1_ net-_u1-pad17_ net-_u1-pad2_ net-_u1-pad13_ SANKET_1BIT_SRAM
+x8 net-_u1-pad1_ net-_u1-pad18_ net-_u1-pad2_ net-_u1-pad16_ SANKET_1BIT_SRAM
+* Control Statements
+
+.ends 8BIT_SRAM
