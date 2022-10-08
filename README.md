@@ -117,3 +117,33 @@ We may choose the MOSFETS for this circuit from the list of "eSim Devices" in th
   Fig7: 6T SRAM Schematic:
 </p>
 
+### 1-BIT SRAM Cell:
+Similar to how a decoder is built, so is a writer circuit. After designing the schematics and symbols for the 6T SRAM and writer circuits, I connected all the parts to get the schematic shown below. The circuit may then be turned into a symbol utilising the Sub-Circuit features when the functionality has been confirmed. The schematic and symbol will appear as follows:
+<p align="center">
+  <img src="IMAGES/1bit_SRAM_symbol.png"></br>
+  Fig: 1-Bit SRAM Symbol:
+</p>
+<p align="center">
+  <img src="IMAGES/1bit_SRAM_SCHEMATIC.png"></br>
+  Fig: 1-Bit SRAM Schematic:
+</p>
+
+### SRAM Row:
+Using 1-BIT SRAM Cell previously created as sub circuit SRAM row is designed. It is cascaded form of 8 1-BIT SRAM Cells, it forms a Byte storege element. Further these rows can be used to create nx8 SRAM .
+<p align="center">
+  <img src="IMAGES/8bit_sram_symbol.png"></br>
+  Fig: 8-Bit SRAM Symbol:
+</p>
+<p align="center">
+  <img src="IMAGES/8_BIT_SRAM_SCHEMATIC.png"></br>
+  Fig: 8-Bit SRAM Schematic:
+</p>
+
+### 8x8 SRAM Schematic:
+We link the Decoder and the  SRAM rows as illustrated in the schematic to produce the 8x8-Bit SRAM after creating all of the aforementioned symbols. The SRAM cell is chosen and the read/write operation is carried out based on the input provided to the decoder.
+<p align="center">
+  <img src="IMAGES/8X8_SCHEMATIC_FINAL.png"></br>
+  Fig. 10: 8-Bit SRAM Schematic:
+</p>
+
+## Simulations:
