@@ -1,0 +1,18 @@
+* E:\FOSSEE\eSim\library\SubcircuitLibrary\SRAM_Cell\SRAM_Cell.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/03/22 00:37:28
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+SC3  /BBL Net-_SC2-Pad2_ GND GND sky130_fd_pr__nfet_01v8_lvt		
+SC5  Net-_SC2-Pad2_ /BBL GND GND sky130_fd_pr__nfet_01v8_lvt		
+SC2  /BBL Net-_SC2-Pad2_ /VDD /VDD sky130_fd_pr__pfet_01v8_lvt		
+SC4  Net-_SC2-Pad2_ /BBL /VDD /VDD sky130_fd_pr__pfet_01v8_lvt		
+SC1  /BL /WL /BBL GND sky130_fd_pr__nfet_01v8_lvt		
+SC6  /BLB /WL Net-_SC2-Pad2_ GND sky130_fd_pr__nfet_01v8_lvt		
+U1  /WL /BL ? /VDD /BLB PORT		
+scmode1  SKY130mode		
+
+.end

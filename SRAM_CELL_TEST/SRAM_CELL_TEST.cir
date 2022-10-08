@@ -1,0 +1,21 @@
+* E:\FOSSEE\ws\testing_a\testing_a.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/04/22 13:41:43
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v4  Vdd GND DC		
+v2  BL GND pulse		
+v3  BLB GND pulse		
+v1  WL GND pulse		
+U5  B plot_v1		
+U1  WL plot_v1		
+U2  BL plot_v1		
+U3  BLB plot_v1		
+U4  Vdd plot_v1		
+scmode1  SKY130mode		
+X1  BL B Vdd WL BLB SANKET_SRAM_CELL_MODIFIED		
+
+.end

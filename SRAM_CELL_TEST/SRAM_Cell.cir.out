@@ -1,0 +1,26 @@
+* e:\fossee\esim\library\subcircuitlibrary\sram_cell\sram_cell.cir
+
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+.lib "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tu
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+xsc3 /bbl net-_sc2-pad2_ gnd gnd sky130_fd_pr__nfet_01v8_lvt 
+xsc5 net-_sc2-pad2_ /bbl gnd gnd sky130_fd_pr__nfet_01v8_lvt 
+xsc2 /bbl net-_sc2-pad2_ /vdd /vdd sky130_fd_pr__pfet_01v8_lvt 
+xsc4 net-_sc2-pad2_ /bbl /vdd /vdd sky130_fd_pr__pfet_01v8_lvt 
+xsc1 /bl /wl /bbl gnd sky130_fd_pr__nfet_01v8_lvt 
+xsc6 /blb /wl net-_sc2-pad2_ gnd sky130_fd_pr__nfet_01v8_lvt 
+* u1  /wl /bl ? /vdd /blb port
+* s c m o d e
+.tran 0e-00 0e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

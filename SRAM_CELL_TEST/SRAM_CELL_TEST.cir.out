@@ -1,0 +1,31 @@
+* e:\fossee\ws\testing_a\testing_a.cir
+
+.include Sanket_SRAM_CELL.sub
+.lib "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+.include "E:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
+v4 vdd gnd  dc 1.8
+v2  bl gnd pulse(0 1.8 0 0.1 0.1 1 2)
+v3  blb gnd pulse(1.8 0 0 0.1 0.1 1 2)
+v1  wl gnd pulse(0 1.8 0 0.2 0.2 5 10)
+* u5  b plot_v1
+* u1  wl plot_v1
+* u2  bl plot_v1
+* u3  blb plot_v1
+* u4  vdd plot_v1
+* s c m o d e
+x1 bl b vdd wl blb Sanket_SRAM_CELL
+.tran 0.1e-00 10e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(b)+16 v(wl)+12 v(vdd)+8 v(blb)+4 v(bl)
+.endc
+.end
