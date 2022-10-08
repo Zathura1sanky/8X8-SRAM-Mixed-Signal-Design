@@ -26,15 +26,44 @@ A mixed-signal design for an 8X8 SRAM, as well as additional bit addressable RAM
  
  
  # Components for 8x8 SRAM:
- The needed components are a 3X8 Decoder built in the digital domain using NgVeri, a 1-bit RAM cell with a writer circuit, a 6T RAM cell, and a sensing circuit all implemented in the analog domain using eSIM. Cascaded 8 SRAMs are used to build an 8 bit RAM row. To choose the 8-bit RAM row that we want to execute the read/write operation to, we will utilise the 3X8 Decoder.
+ The needed components are a 3X8 Decoder built in the digital domain using NgVeri, a 1-bit RAM cell with a writer circuit, a 6T RAM cell, and a sensing circuit all implemented in the analog domain using eSIM. Cascaded 8 SRAMs are used to build an 8 bit RAM row. To choose the 8-bit RAM row that we want to execute the read/write operation to, we will utilise the 3X8 Decoder.The following is the architecture of 1 BIT SRAM.
  <p align="center">
   <img src="IMAGES/1bitRAM.png"></br>
-  Fig. 1:SRAM Block Diagram:
+  Fig:SRAM Block Diagram:
 </p>
  
  # 6T SRAM Cell
 The proposed design of SRAM is made of 6 transistors, pins associated with the design are BL,BLB,WL.WL pin is used to control Read/Write and Hold operation. BL,BLB are used to read and write bit to the ram cell.The value in the BL, BLB is sent to the opposite sides of the inverter network, overriding the already existent value, when the wl is high, turning on the N-MOSFETs on each side of the latching inverters. The value in the inverter network continues to hold after the N-MOSFETs are turned off until the inverter network receives power.
 <p align="center">
   <img src="IMAGES/6TSRAMCELL.png"></br>
-  Fig. 4:  6T SRAM Cell Schematic:
+  Fig:6T SRAM Cell Schematic:
 </p>
+
+#3X8 Decoder:
+Decoder in digital electronics does the job of decoding based on the input data. Decoder on n input will have 2^n outputs. The output is purely base on the combinational logic inside it. In this paper Decoder will be representing the digital block of mixed signal Design.
+<p align="center">
+  <img src="IMAGES/decoder.png"></br>
+  Fig:3x8 Decoder and Truth table:
+</p>
+The eSIM simulator's MakerChip capability has been used in this design to create the aforementioned decoder. Open the MakerChip tab on the left after launching eSIM , then load the Verilog code file. Using the MakerChip EDA tool coupled with the eSIM tool, we can test the operation of the loaded verilog code. The verilog code may then be translated into a NgSpice netlist by switching to the NgVeri tab. The aforementioned decoder's verilog code is as follows:
+
+module SANKET_decoder_3x8(y,a,en);
+input [2:0]a;
+input en;
+output reg [7:0]y;
+always @(a) 
+  begin
+    if(en==1)
+      begin
+        y[0] = !a[0] & !a[1] & !a[2];
+        y[1] = a[0] & !a[1] & !a[2];
+        y[2] = !a[0] & a[1] & !a[2];
+        y[3] = a[0] & a[1] & !a[2];
+        y[4] = !a[0] & !a[1] & a[2];
+        y[5] = a[0] & !a[1] & a[2];
+        y[6] = !a[0] & a[1] & a[2];
+        y[7] = a[0] & a[1] & a[2];
+      end
+    else y = 8'b00000000;
+  end
+endmodule
