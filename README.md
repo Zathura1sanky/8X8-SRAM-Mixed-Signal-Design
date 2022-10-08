@@ -10,7 +10,12 @@ A mixed-signal design for an 8X8 SRAM, as well as additional bit addressable RAM
  * [Writer Circuit](#Writer-Circuit)
  * [Sensor Circuit](#Sensor-Circuit)
  * [Simulation Tools Used](#Simulation-Tools-Used)
- * [Schematics and Simulations](#-Schematics-and-Simulations)
+ * [Schematics and Simulations](#Schematics-and-Simulations)
+   * [Schematics](#Schematics)
+   * [Simulations](#Simulations)
+ * [Bit Addressable RAM](#Bit-Addressable-SRAM)
+ * [Components of 8x8 Bit Addressable SRAM](#Components-of-8x8-Bit-Addressable-SRAM)
+ * [Schematics and Simulations of Bit Addressable SRAM](#Schematics-and-Simulations-of-Bit-Addressable-SRAM)
    * [Schematics](#Schematics)
    * [Simulations](#Simulations)
  * [Netlist of the Circuits](#Netlist-of-the-Circuits)
@@ -195,6 +200,37 @@ Return to eSim after creating the design and producing the netlist, choose the 
   <img src="IMAGES/final_graph_.png"></br>
   Fig. 13: Transient Analysis of 8x8 SRAM:
 </p>
+
+# Bit Addressable SRAM
+SRAM which has address for each bit, and each bit can be addressable and data can be written or read bit wise. RAM can be made combination of byte and bit addressable to obtain blendered results to optimize complex process and also to focus on memory management.
+
+# Components of 8x8 Bit Addressable SRAM
+1. Bit Addressable 1 Bit SRAM - The process is made simple by dividing the WL pin of 1 Bit SRAM to row and column pin separately
+2. Bit Addressable 8 BIT ROW SRAM - Bit Addressable 1 Bit SRAM are used to design ROW SRAM. The design consist of 8 1 BIT SRAM, They can be further cascaded to obtain complex results.
+3. 8x8 Bit Addressable SRAM - It's the final design proposed.
+# Schematics and Simulations of Bit Addressable SRAM
+## Schematics
+### Bit Addressable 1 Bit SRAM
+The design is acomplished by using the previously proposed writer circuit. as discussed above the output BL pin of writer circuit is and operation of WL pin and Din pin.Writer circuit is used to perform and operation between row pin and column pin of Bit Addressable 1 Bit SRAM.
+<p align="center">
+  <img src="IMAGES/BIT_ADDRESSABLE_SRAM_1BIT_SCHEMATIC"></br>
+  Fig. 13: Schematic of Bit Addressable 1 Bit SRAM:
+</p>
+<p align="center">
+  <img src="IMAGES/BIT_ADDRESSABLE_SRAM_1BIT_SYMBOL"></br>
+  Fig. 13: Symbol for Bit Addressable 1 Bit SRAM:
+</p>
+### Bit Addressable 8 BIT ROW SRAM
+It is made by cascading 8 1 Bit SRAM similar to design proposed for SRAM Row, but the only difference is each bit can be addressed separately in this design.It forms Rows for complex SRAM design further.
+<p align="center">
+  <img src="IMAGES/BIT_ADDRESSABL_ROW_SCHEMATIC"></br>
+  Fig. 13: Schematic of Bit Addressable 8 BIT ROW SRAM:
+</p>
+<p align="center">
+  <img src="IMAGES/BIT_ADDRESSABL_ROW_SYMBOL"></br>
+  Fig. 13: Symbol for Bit Addressable 8 BIT ROW SRAM:
+</p>
+## Simulations
 
 
 # Netlist of the Circuits:
