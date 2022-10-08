@@ -1,0 +1,15 @@
+* Subcircuit SANKET_8X8_BIT_ADDRESSABLE_RAM
+.subckt SANKET_8X8_BIT_ADDRESSABLE_RAM net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ net-_u1-pad19_ net-_u1-pad20_ net-_u1-pad21_ net-_u1-pad22_ net-_u1-pad23_ net-_u1-pad24_ net-_u1-pad25_ net-_u1-pad26_ 
+* e:\fossee\esim\library\subcircuitlibrary\sanket_8x8_bit_addressable_ram\sanket_8x8_bit_addressable_ram.cir
+.include BIT_ADDRESSABLE_SRAM_1BIT.sub
+x1 net-_u1-pad1_ net-_u1-pad26_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ BIT_ADDRESSABLE_SRAM_1BIT
+x2 net-_u1-pad5_ net-_u1-pad26_ net-_u1-pad6_ net-_u1-pad3_ net-_u1-pad7_ BIT_ADDRESSABLE_SRAM_1BIT
+x3 net-_u1-pad8_ net-_u1-pad26_ net-_u1-pad9_ net-_u1-pad3_ net-_u1-pad10_ BIT_ADDRESSABLE_SRAM_1BIT
+x4 net-_u1-pad11_ net-_u1-pad26_ net-_u1-pad12_ net-_u1-pad3_ net-_u1-pad13_ BIT_ADDRESSABLE_SRAM_1BIT
+x5 net-_u1-pad14_ net-_u1-pad26_ net-_u1-pad15_ net-_u1-pad3_ net-_u1-pad16_ BIT_ADDRESSABLE_SRAM_1BIT
+x6 net-_u1-pad17_ net-_u1-pad26_ net-_u1-pad18_ net-_u1-pad3_ net-_u1-pad19_ BIT_ADDRESSABLE_SRAM_1BIT
+x7 net-_u1-pad20_ net-_u1-pad26_ net-_u1-pad21_ net-_u1-pad3_ net-_u1-pad22_ BIT_ADDRESSABLE_SRAM_1BIT
+x8 net-_u1-pad23_ net-_u1-pad26_ net-_u1-pad24_ net-_u1-pad3_ net-_u1-pad25_ BIT_ADDRESSABLE_SRAM_1BIT
+* Control Statements
+
+.ends SANKET_8X8_BIT_ADDRESSABLE_RAM

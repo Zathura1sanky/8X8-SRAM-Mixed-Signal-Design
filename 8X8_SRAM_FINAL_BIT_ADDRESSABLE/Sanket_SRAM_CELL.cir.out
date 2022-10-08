@@ -1,0 +1,18 @@
+* e:\fossee\esim\library\subcircuitlibrary\sanket_sram_cell\sanket_sram_cell.cir
+
+xsc3 net-_sc1-pad3_ net-_sc2-pad2_ gnd gnd sky130_fd_pr__nfet_01v8_lvt 
+xsc5 net-_sc2-pad2_ net-_sc1-pad3_ gnd gnd sky130_fd_pr__nfet_01v8_lvt 
+xsc1 net-_sc1-pad1_ net-_sc1-pad2_ net-_sc1-pad3_ gnd sky130_fd_pr__nfet_01v8_lvt 
+xsc6 net-_sc6-pad1_ net-_sc1-pad2_ net-_sc2-pad2_ gnd sky130_fd_pr__nfet_01v8_lvt 
+xsc2 net-_sc1-pad3_ net-_sc2-pad2_ net-_sc2-pad3_ net-_sc2-pad3_ sky130_fd_pr__pfet_01v8_lvt 
+xsc4 net-_sc2-pad2_ net-_sc1-pad3_ net-_sc2-pad3_ net-_sc2-pad3_ sky130_fd_pr__pfet_01v8_lvt 
+* u1  net-_sc1-pad1_ net-_sc1-pad3_ net-_sc2-pad3_ net-_sc1-pad2_ net-_sc6-pad1_ port
+.tran 0.1e-00 20e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

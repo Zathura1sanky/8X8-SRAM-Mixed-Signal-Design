@@ -1,0 +1,38 @@
+* E:\FOSSEE\ws\8X8_SRAM_FINAL_BIT_ADDRESSABLE\8X8_SRAM_FINAL_BIT_ADDRESSABLE.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/07/22 23:57:22
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  Net-_U5-Pad9_ d_in r_en q_65 Net-_U5-Pad10_ d_in dum Net-_U5-Pad11_ d_in dum Net-_U5-Pad12_ d_in dum Net-_U5-Pad13_ d_in dum Net-_U5-Pad14_ d_in dum Net-_U5-Pad15_ d_in dum Net-_U5-Pad16_ d_in dum Net-_U6-Pad9_ SANKET_SRAM_ROW_BIT_ADDRESSABLE		
+X3  Net-_U5-Pad9_ d_in r_en dum Net-_U5-Pad10_ d_in dum Net-_U5-Pad11_ d_in dum Net-_U5-Pad12_ d_in dum Net-_U5-Pad13_ d_in dum Net-_U5-Pad14_ d_in dum Net-_U5-Pad15_ d_in dum Net-_U5-Pad16_ d_in dum Net-_U6-Pad10_ SANKET_SRAM_ROW_BIT_ADDRESSABLE		
+X2  Net-_U5-Pad9_ d_in r_en dum Net-_U5-Pad10_ d_in dum Net-_U5-Pad11_ d_in dum Net-_U5-Pad12_ d_in dum Net-_U5-Pad13_ d_in dum Net-_U5-Pad14_ d_in dum Net-_U5-Pad15_ d_in dum Net-_U5-Pad16_ d_in dum Net-_U6-Pad13_ SANKET_SRAM_ROW_BIT_ADDRESSABLE		
+X4  Net-_U5-Pad9_ d_in r_en dum Net-_U5-Pad10_ d_in dum Net-_U5-Pad11_ d_in dum Net-_U5-Pad12_ d_in dum Net-_U5-Pad13_ d_in dum Net-_U5-Pad14_ d_in dum Net-_U5-Pad15_ d_in dum Net-_U5-Pad16_ d_in dum Net-_U6-Pad14_ SANKET_SRAM_ROW_BIT_ADDRESSABLE		
+X5  Net-_U5-Pad9_ d_in r_en dum Net-_U5-Pad10_ d_in dum Net-_U5-Pad11_ d_in dum Net-_U5-Pad12_ d_in dum Net-_U5-Pad13_ d_in dum Net-_U5-Pad14_ d_in dum Net-_U5-Pad15_ d_in dum Net-_U5-Pad16_ d_in dum Net-_U6-Pad11_ SANKET_SRAM_ROW_BIT_ADDRESSABLE		
+X7  Net-_U5-Pad9_ d_in r_en dum Net-_U5-Pad10_ d_in dum Net-_U5-Pad11_ d_in dum Net-_U5-Pad12_ d_in dum Net-_U5-Pad13_ d_in dum Net-_U5-Pad14_ d_in dum Net-_U5-Pad15_ d_in dum Net-_U5-Pad16_ d_in dum Net-_U6-Pad12_ SANKET_SRAM_ROW_BIT_ADDRESSABLE		
+X6  Net-_U5-Pad9_ d_in r_en dum Net-_U5-Pad10_ d_in dum Net-_U5-Pad11_ d_in dum Net-_U5-Pad12_ d_in dum Net-_U5-Pad13_ d_in dum Net-_U5-Pad14_ d_in dum Net-_U5-Pad15_ d_in dum Net-_U5-Pad16_ d_in dum Net-_U6-Pad15_ SANKET_SRAM_ROW_BIT_ADDRESSABLE		
+X8  Net-_U5-Pad9_ d_in r_en dum Net-_U5-Pad10_ d_in dum Net-_U5-Pad11_ d_in dum Net-_U5-Pad12_ d_in dum Net-_U5-Pad13_ d_in dum Net-_U5-Pad14_ d_in dum Net-_U5-Pad15_ d_in dum Net-_U5-Pad16_ d_in q_00 Net-_U6-Pad16_ SANKET_SRAM_ROW_BIT_ADDRESSABLE		
+U2  Net-_U2-Pad1_ Net-_U2-Pad2_ Net-_U2-Pad3_ Net-_U2-Pad4_ Net-_U2-Pad5_ Net-_U2-Pad6_ Net-_U2-Pad7_ Net-_U2-Pad8_ Net-_U2-Pad9_ Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ sanket_decoder_3x8		
+U5  Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U5-Pad9_ Net-_U5-Pad10_ Net-_U5-Pad11_ Net-_U5-Pad12_ Net-_U5-Pad13_ Net-_U5-Pad14_ Net-_U5-Pad15_ Net-_U5-Pad16_ dac_bridge_8		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ sanket_decoder_3x8		
+U6  Net-_U2-Pad5_ Net-_U2-Pad6_ Net-_U2-Pad7_ Net-_U2-Pad8_ Net-_U2-Pad9_ Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U6-Pad9_ Net-_U6-Pad10_ Net-_U6-Pad11_ Net-_U6-Pad12_ Net-_U6-Pad13_ Net-_U6-Pad14_ Net-_U6-Pad15_ Net-_U6-Pad16_ dac_bridge_8		
+U3  COLUMN COLUMN COLUMN En Net-_U2-Pad1_ Net-_U2-Pad2_ Net-_U2-Pad3_ Net-_U2-Pad4_ adc_bridge_4		
+U4  ROW ROW ROW Net-_U4-Pad4_ Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ adc_bridge_4		
+v8  Net-_U4-Pad4_ GND pulse		
+v3  ROW GND pulse		
+v9  r_en GND pulse		
+v7  En GND pulse		
+v1  COLUMN GND pulse		
+v10  d_in GND pulse		
+U7  q_65 plot_v1		
+U8  q_00 plot_v1		
+U11  En plot_v1		
+U9  COLUMN plot_v1		
+U10  ROW plot_v1		
+U12  r_en plot_v1		
+U13  d_in plot_v1		
+scmode1  SKY130mode		
+
+.end
