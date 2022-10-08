@@ -39,7 +39,7 @@ The proposed design of SRAM is made of 6 transistors, pins associated with the d
   Fig:6T SRAM Cell Schematic:
 </p>
 
-#3X8 Decoder:
+# 3X8 Decoder:
 Decoder in digital electronics does the job of decoding based on the input data. Decoder on n input will have 2^n outputs. The output is purely base on the combinational logic inside it. In this paper Decoder will be representing the digital block of mixed signal Design.
 <p align="center">
   <img src="IMAGES/decoder.png"></br>
@@ -47,23 +47,23 @@ Decoder in digital electronics does the job of decoding based on the input data.
 </p>
 The eSIM simulator's MakerChip capability has been used in this design to create the aforementioned decoder. Open the MakerChip tab on the left after launching eSIM , then load the Verilog code file. Using the MakerChip EDA tool coupled with the eSIM tool, we can test the operation of the loaded verilog code. The verilog code may then be translated into a NgSpice netlist by switching to the NgVeri tab. The aforementioned decoder's verilog code is as follows:
 
-module SANKET_decoder_3x8(y,a,en);
-input [2:0]a;
-input en;
-output reg [7:0]y;
-always @(a) 
-  begin
-    if(en==1)
-      begin
-        y[0] = !a[0] & !a[1] & !a[2];
-        y[1] = a[0] & !a[1] & !a[2];
-        y[2] = !a[0] & a[1] & !a[2];
-        y[3] = a[0] & a[1] & !a[2];
-        y[4] = !a[0] & !a[1] & a[2];
-        y[5] = a[0] & !a[1] & a[2];
-        y[6] = !a[0] & a[1] & a[2];
-        y[7] = a[0] & a[1] & a[2];
-      end
-    else y = 8'b00000000;
-  end
-endmodule
+  module SANKET_decoder_3x8(y,a,en);
+  input [2:0]a;
+  input en;
+  output reg [7:0]y;
+  always @(a) 
+    begin
+      if(en==1)
+        begin
+          y[0] = !a[0] & !a[1] & !a[2];
+          y[1] = a[0] & !a[1] & !a[2];
+          y[2] = !a[0] & a[1] & !a[2];
+          y[3] = a[0] & a[1] & !a[2];
+          y[4] = !a[0] & !a[1] & a[2];
+          y[5] = a[0] & !a[1] & a[2];
+          y[6] = !a[0] & a[1] & a[2];
+          y[7] = a[0] & a[1] & a[2];
+        end
+      else y = 8'b00000000;
+    end
+  endmodule
