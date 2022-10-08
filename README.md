@@ -87,10 +87,10 @@ The input for the 6T SRAM cell is provided by this circuit. This block's functio
 The SRAM cell's data may be read using this circuit. A Read Enable(r en) pin on the device outputs the value stored in the SRAM cell when it is high.
 
 # Simulation Tools Used:
-•  eSim: It is an Open Source EDA developed by FOSSEE, IIT Bombay. It is used for electronic circuit simulation. It is made by the combination of two software namely NgSpice and KiCAD. For more details refer:<a href='https://www.esim.fossee.in/'>Here</a></br>
+•  eSim: FOSSEE, IIT Bombay, created the Open Source EDA. It is applied to the modelling of electrical circuits. NgSpice and KiCAD, two pieces of software, were combined to create it. Further information<a href='https://www.esim.fossee.in/'>Refer here</a></br>
 
-• NgSpice: It is an Open Source Software for Spice Simulations. For more details refer:<a href='http://ngspice.sourceforge.net/docs.html'>Here</a></br>
+• NgSpice: It is an Open Source Software for Spice Simulations. For more details<a href='http://ngspice.sourceforge.net/docs.html'>Refer here</a></br>
 
-• Makerchip: It is an Online Web Browser IDE for Verilog/System-verilog/TL-Verilog Simulation. Refer: <a href='https://www.makerchip.com/'>Here</a></br>
+• Makerchip: It is an Online Web Browser IDE for Verilog/System-verilog/TL-Verilog Simulation. <a href='https://www.makerchip.com/'>Refer here</a></br>
 
-• Verilator: It is a tool which converts Verilog code to C++ objects. Refer: <a href='https://www.veripool.org/verilator/'>Here</a></br>
+• Verilator: It is a tool which converts Verilog code to C++ objects. <a href='https://www.veripool.org/verilator/'>Refer here</a></br>
