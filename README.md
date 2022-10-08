@@ -213,21 +213,21 @@ SRAM which has address for each bit, and each bit can be addressable and data ca
 ### Bit Addressable 1 Bit SRAM
 The design is acomplished by using the previously proposed writer circuit. as discussed above the output BL pin of writer circuit is and operation of WL pin and Din pin.Writer circuit is used to perform and operation between row pin and column pin of Bit Addressable 1 Bit SRAM.
 <p align="center">
-  <img src="IMAGES/BIT_ADDRESSABLE_SRAM_1BIT_SCHEMATIC"></br>
+  <img src="IMAGES/BIT_ADDRESSABLE_SRAM_1BIT_SCHEMATIC.png"></br>
   Fig. 13: Schematic of Bit Addressable 1 Bit SRAM:
 </p>
 <p align="center">
-  <img src="IMAGES/BIT_ADDRESSABLE_SRAM_1BIT_SYMBOL"></br>
+  <img src="IMAGES/BIT_ADDRESSABLE_SRAM_1BIT_SYMBOL.png"></br>
   Fig. 13: Symbol for Bit Addressable 1 Bit SRAM:
 </p>
 ### Bit Addressable 8 BIT ROW SRAM
 It is made by cascading 8 1 Bit SRAM similar to design proposed for SRAM Row, but the only difference is each bit can be addressed separately in this design.It forms Rows for complex SRAM design further.
 <p align="center">
-  <img src="IMAGES/BIT_ADDRESSABL_ROW_SCHEMATIC"></br>
+  <img src="IMAGES/BIT_ADDRESSABL_ROW_SCHEMATIC.png"></br>
   Fig. 13: Schematic of Bit Addressable 8 BIT ROW SRAM:
 </p>
 <p align="center">
-  <img src="IMAGES/BIT_ADDRESSABL_ROW_SYMBOL"></br>
+  <img src="IMAGES/BIT_ADDRESSABL_ROW_SYMBOL.png"></br>
   Fig. 13: Symbol for Bit Addressable 8 BIT ROW SRAM:
 </p>
 ## Simulations
