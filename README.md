@@ -251,13 +251,13 @@ It is formed by further cascading of Bit Addressable 8 BIT ROW SRAM following th
 Row and Column of the Bit Addressable 1 Bit SRAM are shorted for just testing purpose.
 <p align="center">
   <img src="IMAGES/SRAM_BIT_ADDRESSABLE_1BIT_TEST_GRAPH.png"></br>
-  Fig: Symbol for Bit Addressable 1 Bit SRAM:
+  Fig: Transient analysis of bit addressable 1 bit SRAM:
 </p>
 
 ### 8x8 Bit Addressable SRAM
 <p align="center">
   <img src="IMAGES/8X8_BIT_ADDRESSABLE_GRAPH_FINAL.png"></br>
-  Fig: Symbol for Bit Addressable 1 Bit SRAM:
+  Fig: Transient analysis of 8x8 Bit addressable SRAM:
 </p>
 
 
