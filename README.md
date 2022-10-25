@@ -188,17 +188,17 @@ Return to eSim after creating the design and producing the netlist, choose the 
 ### SRAM Row:
 <p align="center">
   <img src="IMAGES/8_BIT_SRAM_TEST.png"></br>
-  Fig. 13: Test Schematic SRAM Row:
+  Fig: Test Schematic SRAM Row:
 </p>
 <p align="center">
   <img src="IMAGES/8_BIT_SRAM_GRAPH.png"></br>
-  Fig. 13: Transient Analysis of SRAM ROW:
+  Fig: Transient Analysis of SRAM ROW:
 </p>
 
 ### 8x8 SRAM:
 <p align="center">
   <img src="IMAGES/final_graph_.png"></br>
-  Fig. 13: Transient Analysis of 8x8 SRAM:
+  Fig: Transient Analysis of 8x8 SRAM:
 </p>
 
 # Bit Addressable SRAM
@@ -215,29 +215,29 @@ SRAM which has address for each bit, and each bit can be addressable and data ca
 The design is acomplished by using the previously proposed writer circuit. as discussed above the output BL pin of writer circuit is and operation of WL pin and Din pin.Writer circuit is used to perform and operation between row pin and column pin of Bit Addressable 1 Bit SRAM.
 <p align="center">
   <img src="IMAGES/BIT_ADDRESSABLE_SRAM_1BIT_SCHEMATIC.png"></br>
-  Fig. 13: Schematic of Bit Addressable 1 Bit SRAM:
+  Fig: Schematic of Bit Addressable 1 Bit SRAM:
 </p>
 <p align="center">
   <img src="IMAGES/BIT_ADDRESSABLE_SRAM_1BIT_SYMBOL.png"></br>
-  Fig. 13: Symbol for Bit Addressable 1 Bit SRAM:
+  Fig: Symbol for Bit Addressable 1 Bit SRAM:
 </p>
 
 ### Bit Addressable 8 BIT ROW SRAM
 It is made by cascading 8 1 Bit SRAM similar to design proposed for SRAM Row, but the only difference is each bit can be addressed separately in this design.It forms Rows for complex SRAM design further.
 <p align="center">
   <img src="IMAGES/BIT_ADDRESSABL_ROW_SCHEMATIC.png"></br>
-  Fig. 13: Schematic of Bit Addressable 8 BIT ROW SRAM:
+  Fig: Schematic of Bit Addressable 8 BIT ROW SRAM:
 </p>
 <p align="center">
   <img src="IMAGES/BIT_ADDRESSABL_ROW_SYMBOL.png"></br>
-  Fig. 13: Symbol for Bit Addressable 8 BIT ROW SRAM:
+  Fig: Symbol for Bit Addressable 8 BIT ROW SRAM:
 </p>
 
 ### 8x8 Bit Addressable SRAM
 It is formed by further cascading of Bit Addressable 8 BIT ROW SRAM following the final propsed Schematic of 8x8 Bit Addressable SRAM:
 <p align="center">
   <img src="IMAGES/8X8_BIT_ADDRESSABLE_SCHEMATIC_FINAL.png"></br>
-  Fig. 13: Schematic of 8x8 Bit Addressable SRAM:
+  Fig: Schematic of 8x8 Bit Addressable SRAM:
 </p>
 
 ## Simulations 2:
@@ -246,18 +246,18 @@ It is formed by further cascading of Bit Addressable 8 BIT ROW SRAM following th
 
 <p align="center">
   <img src="IMAGES/SRAM_BIT_ADDRESSABLE_1BIT_TEST_SCHEMATIC.png"></br>
-  Fig. 13: Schematic of Bit Addressable 1 Bit SRAM:
+  Fig: Schematic of Bit Addressable 1 Bit SRAM:
 </p>
 Row and Column of the Bit Addressable 1 Bit SRAM are shorted for just testing purpose.
 <p align="center">
   <img src="IMAGES/SRAM_BIT_ADDRESSABLE_1BIT_TEST_GRAPH.png"></br>
-  Fig. 13: Symbol for Bit Addressable 1 Bit SRAM:
+  Fig: Symbol for Bit Addressable 1 Bit SRAM:
 </p>
 
 ### 8x8 Bit Addressable SRAM
 <p align="center">
   <img src="IMAGES/8X8_BIT_ADDRESSABLE_GRAPH_FINAL.png"></br>
-  Fig. 13: Symbol for Bit Addressable 1 Bit SRAM:
+  Fig: Symbol for Bit Addressable 1 Bit SRAM:
 </p>
 
 
